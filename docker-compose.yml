@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth:
+    image: 'prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth:0.0.40'
+    build:
+      context: ./build
+      args:
+        VERSION: v2.0.2
+    volumes:
+      - 'data:/data'
+    ports:
+      - '12001:12001/udp'
+      - '13001:13001'
+      - '4000'
+    restart: always
+    environment:
+      - >-
+        EXTRA_OPTS=--http-web3provider=http://my.ethchain-geth.public.dappnode.eth:8545
+        --grpc-gateway-corsdomain=http://prysm-beacon-chain-mainnet.avadopackage.com,http://eth2validator.avadopackage.com
+volumes:
+  data: {}
