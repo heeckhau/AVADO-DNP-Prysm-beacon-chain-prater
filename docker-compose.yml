@@ -1,11 +1,11 @@
 version: '3.4'
 services:
-  prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth:
-    image: 'prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth:0.0.40'
+  prysm-beacon-chain-prater.avado.dnp.dappnode.eth:
+    image: 'prysm-beacon-chain-prater.avado.dnp.dappnode.eth:0.0.6'
     build:
       context: ./build
       args:
-        VERSION: v2.0.2
+        VERSION: v2.0.5
     volumes:
       - 'data:/data'
     ports:
@@ -15,7 +15,7 @@ services:
     restart: always
     environment:
       - >-
-        EXTRA_OPTS=--http-web3provider=http://my.ethchain-geth.public.dappnode.eth:8545
-        --grpc-gateway-corsdomain=http://prysm-beacon-chain-mainnet.avadopackage.com,http://eth2validator.avadopackage.com
+        EXTRA_OPTS=--http-web3provider=http://my.goerli-geth..my.ava.do:8545/
+        --grpc-gateway-corsdomain=http://prysm-beacon-chain-prater..my.ava.do,http://eth2validator.my.ava.do
 volumes:
   data: {}

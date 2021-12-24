@@ -7,7 +7,7 @@ import React from "react";
 // import getInstalledEthNode from "../../../util/getInstalledEthNode";
 
 // const dcloudmonitorAPI = "";
-// const dcloudmonitorAPI ="http://my.prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth";
+// const dcloudmonitorAPI ="http://my.prysm-beacon-chain-prater.avado.dnp.dappnode.eth";
 
 import BeaconChainInfo from "./BeaconChainInfo";
 

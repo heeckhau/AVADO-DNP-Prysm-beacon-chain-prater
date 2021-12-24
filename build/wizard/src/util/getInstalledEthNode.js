@@ -43,7 +43,7 @@ const getInstalledEthNode = async (allowedPackages) => {
             }, null)
             connection.close();
             // if everything else fails - return RYO endpoint
-            return resolve(endpoint || "https://mainnet.eth.cloud.ava.do");
+            return resolve(endpoint || "https://prater.eth.cloud.ava.do");
         };
         connection.onclose = function (reason, details) {        
             if (reason === "closed"){

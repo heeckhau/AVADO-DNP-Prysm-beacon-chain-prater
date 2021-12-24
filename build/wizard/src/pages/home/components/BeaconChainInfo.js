@@ -118,7 +118,7 @@ const Comp = ({ onSynced }) => {
                                         <p>status: {syncing === false ? (<span className="tag is-success">in sync</span>) : (<span className="tag is-warning">syncing</span>)}</p>
                                         {(chainHead) && (
                                             <>
-                                                <p><a target="_new" href="https://beaconcha.in/">beaconcha.in explorer</a></p>
+                                                <p><a target="_new" href="https://prater.beaconcha.in/">prater beaconcha.in explorer</a></p>
                                                 {syncing !== false && (<h3 className="title is-3">Waiting until the beacon chain has synced</h3>)}
                                             </>
                                         )}

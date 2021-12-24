@@ -1,4 +1,4 @@
-# AVADO Prysm ETH2 beacon chain
+# AVADO Prysm ETH2 beacon chain : Prater testnet
 
 [![Build](https://github.com/AvadoDServer/AVADO-DNP-Prysm-beacon-chain/actions/workflows/build.yml/badge.svg)](https://github.com/AvadoDServer/AVADO-DNP-Prysm-beacon-chain/actions/workflows/build.yml)
 
