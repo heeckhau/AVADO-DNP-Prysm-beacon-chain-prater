@@ -24,7 +24,7 @@ RUN apt update && \
 
 RUN useradd nginx
 
-ADD https://github.com/eth2-clients/eth2-networks/raw/master/shared/prater/genesis.ssz /genesis.ssz
+ADD https://github.com/eth-clients/eth2-networks/raw/master/shared/prater/genesis.ssz /genesis.ssz
 
 # copy wizard
 COPY --from=build-deps-wizard /usr/src/app/wizard/build /usr/src/monitor/wizard
