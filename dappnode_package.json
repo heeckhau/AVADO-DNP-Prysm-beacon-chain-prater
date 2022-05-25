@@ -1,14 +1,11 @@
 {
   "image": {
-    "path": "prysm-beacon-chain-prater.avado.dnp.dappnode.eth_0.0.6.tar.xz",
-    "hash": "/ipfs/QmasjEqGRSdf3sJzzNHQ1MPVbbCcYFsgRk7dxUgtjRmmcX",
-    "size": 77281688,
     "ports": [
       "12001:12001/udp",
       "13001:13001"
     ],
     "environment": [
-      "EXTRA_OPTS=--http-web3provider=http://my.goerli-geth.avado.dnp.dappnode.eth:8545/ --grpc-gateway-corsdomain=http://prysm-beacon-chain-prater.avadopackage.com,http://eth2validator.avadopackage.com"
+      "EXTRA_OPTS=--http-web3provider=http://goerli-geth.my.ava.do:8545/ --grpc-gateway-corsdomain=http://prysm-beacon-chain-prater.my.ava.do,http://eth2validator-prater.my.ava.do"
     ],
     "volumes": [
       "data:/data"
@@ -18,8 +15,8 @@
   "name": "prysm-beacon-chain-prater.avado.dnp.dappnode.eth",
   "autoupdate": true,
   "title": "ETH2.0 Prysm beacon chain: Prater testnet",
-  "version": "0.0.6",
-  "upstream": "v2.0.5",
+  "version": "0.0.7",
+  "upstream": "v2.1.0",
   "shortDescription": "Prysm ETH2.0 Beacon chain (Prater)",
   "description": "ETH2 Prater beacon chain",
   "type": "service",
@@ -28,6 +25,5 @@
   "avatar": "/ipfs/Qmf7yFka8z2QLRrDyT1ESNRwP9a1tdufEEtBghXHFUEQEP",
   "links": {
     "OnboardingWizard": "http://prysm-beacon-chain-prater.my.ava.do/"
-  },
-  "builddate": "2021-12-26T13:23:25.720Z"
+  }
 }
