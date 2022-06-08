@@ -9,7 +9,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   },
-  "host": "prysm-beacon-chain-prater.my.ava.do:3501",
+  "host": "prysm-beacon-chain-prater.my.ava.do:3500",
   "schemes": [
     "http"
   ],

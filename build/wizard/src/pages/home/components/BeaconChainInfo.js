@@ -20,14 +20,14 @@ const Comp = ({ onSynced }) => {
                 setSwaggerClient(client);
                 updateStats();
             })
+            console.log("FFFF")
     }, []);
 
     const updateStats = () => {
-
-        if (!swaggerClient || !swaggerClient.apis) {
+       if (!swaggerClient.apis) {
             console.log("No API's yet - waiting...")
         } else {
-
+            console.log("test")
             swaggerClient.apis.Node.GetSyncStatus().then((status) => {
                 if (status.body && status.body.syncing === false) {
                     onSynced && onSynced();
@@ -53,12 +53,11 @@ const Comp = ({ onSynced }) => {
             });
         }
         setTimer(setTimeout(updateStats, syncing ? 5 * 1000 : 10 * 1000));
-
     }
 
-
     React.useEffect(() => {
-        updateStats();
+        if (swaggerClient)
+            updateStats();
     }, [swaggerClient]);
 
     React.useEffect(() => {

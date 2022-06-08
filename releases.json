@@ -35,10 +35,17 @@
     }
   },
   "0.0.7": {
-    "hash": "/ipfs/QmdqJ4u7kPnNhx9QToxqPuisFGJE93pStzdvxYndweCTef",
+    "hash": "/ipfs/QmSLcWjHEQZHyfMK7wVu99gaRw5nHypWRdktSnsiJ5Y8ya",
     "type": "manifest",
     "uploadedTo": {
-      "dappnode": "Wed, 27 Apr 2022 07:35:42 GMT"
+      "dappnode": "Tue, 07 Jun 2022 17:36:25 GMT"
+    }
+  },
+  "0.0.8": {
+    "hash": "/ipfs/QmfWuFYgi3Z4Dns4K8DXkJgrNJScqod5JmdCtxVGnnFjpP",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Tue, 07 Jun 2022 18:29:12 GMT"
     }
   }
 }

@@ -1,4 +1,4 @@
-FROM node:10.15.3 as build-deps-wizard
+FROM node:16.15.0 as build-deps-wizard
 ARG VERSION
 
 # build wizard
@@ -19,7 +19,7 @@ RUN ls -l
 FROM debian:buster-slim
 
 RUN apt update && \
-    apt install -y ca-certificates supervisor nginx bash && \
+    apt install -y ca-certificates supervisor nginx bash vim && \
     rm -rf /var/lib/apt/lists/*
 
 RUN useradd nginx
